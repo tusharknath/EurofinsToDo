@@ -139,6 +139,7 @@
     <Compile Include="ActionFilters\GlobalExceptionAttribute.cs" />
     <Compile Include="ActionFilters\LoggingFilterAttribute.cs" />
     <Compile Include="App_Start\CORSConfig.cs" />
+    <Compile Include="Authentication\BasicAuthenticationAttribute.cs" />
     <Compile Include="Helper\ServiceStatus.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
@@ -167,7 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ToDo.DataAccessLayer\ToDo.WebAPI.DataAccessLayer.csproj">

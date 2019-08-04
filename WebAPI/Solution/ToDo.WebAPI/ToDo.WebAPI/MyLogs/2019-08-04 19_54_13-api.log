@@ -1,0 +1,8 @@
+2019-08-04 19:54:13.2307|ERROR|ToDo.WebAPI.Helper.NLogger|Method: GET
+URL: http://localhost:49992/api/user
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : 
+Error: Object reference not set to an instance of an object.
+
+

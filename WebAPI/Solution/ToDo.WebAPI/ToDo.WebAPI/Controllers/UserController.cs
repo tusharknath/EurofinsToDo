@@ -6,9 +6,11 @@ using System.Net.Http;
 using System.Web.Http;
 using ToDo.DataAccessLayer.DBModel;
 using ToDo.DomainLayer.DomainServices;
+using ToDo.WebAPI.Authentication;
 
 namespace ToDo.WebAPI.Controllers
 {
+    [BasicAuthentication]
     public class UserController : ApiController
     {
         private IUserService _userService;

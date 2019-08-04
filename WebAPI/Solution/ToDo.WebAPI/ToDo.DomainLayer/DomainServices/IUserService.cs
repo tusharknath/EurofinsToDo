@@ -10,5 +10,6 @@ namespace ToDo.DomainLayer.DomainServices
 {
     public interface IUserService : IEntityService<User>
     {
+       
     }
 }

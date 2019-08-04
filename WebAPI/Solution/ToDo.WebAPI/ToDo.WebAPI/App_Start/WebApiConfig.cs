@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using ToDo.WebAPI.ActionFilters;
+using ToDo.WebAPI.Authentication;
 using ToDo.WebAPI.Helper;
 
 namespace ToDo.WebAPI
@@ -23,6 +24,8 @@ namespace ToDo.WebAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Filters.Add(new BasicAuthenticationAttribute());
         }
     }
 }
