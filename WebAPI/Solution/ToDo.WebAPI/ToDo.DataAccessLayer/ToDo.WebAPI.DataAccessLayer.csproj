@@ -35,6 +35,9 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.1\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +48,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBModel\EuroFinDBContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuroFinDBContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBModel\EuroFinDBContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuroFinDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBModel\EuroFinDBContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuroFinDBContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DBModel\Task.cs">
+      <DependentUpon>EuroFinDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBModel\User.cs">
+      <DependentUpon>EuroFinDBContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
@@ -52,16 +76,33 @@
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="DBModel\EuroFinDBContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EuroFinDBContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DBModel\EuroFinDBContext.edmx.diagram">
+      <DependentUpon>EuroFinDBContext.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ToDo.WebAPI.Common\ToDo.WebAPI.Common.csproj">
-      <Project>{5EBBD90F-0BD4-4C94-AA92-942677ABDAF2}</Project>
-      <Name>ToDo.WebAPI.Common</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBModel\EuroFinDBContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EuroFinDBContext.edmx</DependentUpon>
+      <LastGenOutput>EuroFinDBContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DBModel\EuroFinDBContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EuroFinDBContext.edmx</DependentUpon>
+      <LastGenOutput>EuroFinDBContext.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ToDo.DataAccessLayer.DBModel;
 using ToDo.DataAccessLayer.Repository;
 using ToDo.DataAccessLayer.UnitOfWork;
 using ToDo.DomainLayer.EntityService;
-using ToDo.WebAPI.Common.DataBaseModel;
 
 namespace ToDo.DomainLayer.DomainServices
 {
-    public class UserService : EntityService<User>
+    public class UserService : EntityService<User> , IUserService
     {
         IUnitOfWork _unitOfWork;
         IRepository<User> _usersRepository;

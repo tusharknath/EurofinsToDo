@@ -8,7 +8,7 @@ using ToDo.DataAccessLayer.UnitOfWork;
 
 namespace ToDo.DomainLayer.EntityService
 {
-    public abstract class EntityService<T> : IEntityService<T>
+    public abstract class EntityService<T> : IEntityService<T> where T : class
     {
         IUnitOfWork _unitOfWork;
         IRepository<T> _repository;
@@ -26,7 +26,7 @@ namespace ToDo.DomainLayer.EntityService
             {
                 throw new ArgumentNullException("entity");
             }
-            _repository.Insert(entity);
+            _repository.Insert (entity);
             _unitOfWork.Commit();
         }
 
@@ -47,7 +47,9 @@ namespace ToDo.DomainLayer.EntityService
 
         public virtual IEnumerable<T> GetAll()
         {
-            return _repository.Get();
+            return _repository.GetAll();
         }
+        
+
     }
 }

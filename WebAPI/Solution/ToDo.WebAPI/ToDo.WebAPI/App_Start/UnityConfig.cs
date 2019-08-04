@@ -1,8 +1,10 @@
 using System;
+using System.Data.Entity;
 using ToDo.DataAccessLayer.Repository;
 using ToDo.DataAccessLayer.UnitOfWork;
-using ToDo.DomainLayer.EntityService;
+using ToDo.DomainLayer.DomainServices;
 using Unity;
+using Unity.Injection;
 
 namespace ToDo.WebAPI
 {
@@ -43,9 +45,10 @@ namespace ToDo.WebAPI
             // container.LoadConfiguration();
 
             // TODO: Register your type's mappings here.
+            container.RegisterType<IUserService, UserService>();
             container.RegisterType<IUnitOfWork, UnitOfWork>();
-            container.RegisterType(typeof(IRepository<>), typeof(Repository<>));
-            container.RegisterType(typeof(IEntityService<>), typeof(EntityService<>));
+             container.RegisterType(typeof(IRepository<>), typeof(Repository<>));
+            //container.RegisterType<DbContext, EuroFinsToDoContext>(new InjectionConstructor("EuroFinsToDoContext"));
         }
     }
 }

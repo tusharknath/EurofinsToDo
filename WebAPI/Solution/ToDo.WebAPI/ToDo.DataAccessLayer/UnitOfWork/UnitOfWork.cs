@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ToDo.DataAccessLayer.DBModel;
 using ToDo.DataAccessLayer.Repository;
-using ToDo.WebAPI.Common.DataBaseModel;
 
 namespace ToDo.DataAccessLayer.UnitOfWork
 {
@@ -13,13 +13,13 @@ namespace ToDo.DataAccessLayer.UnitOfWork
         /// <summary>
         /// The DbContext
         /// </summary>
-        private EuroFinsToDoContext _dbContext;
+        private ToDoContext _dbContext;
 
         /// <summary>
         /// Initializes a new instance of the UnitOfWork class.
         /// </summary>
         /// <param name="context">The object context</param>
-        public UnitOfWork(EuroFinsToDoContext context)
+        public UnitOfWork(ToDoContext context)
         {
 
             _dbContext = context;

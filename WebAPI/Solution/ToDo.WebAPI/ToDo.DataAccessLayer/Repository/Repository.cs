@@ -5,21 +5,22 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using ToDo.DataAccessLayer.DBModel;
 
 namespace ToDo.DataAccessLayer.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private DbContext context;
+        private ToDoContext context;
         private DbSet<TEntity> dbSet;
 
-        public Repository(DbContext context)
+        public Repository(ToDoContext context)
         {
             this.context = context;
             this.dbSet = context.Set<TEntity>();
         }
 
-        public virtual List<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, params Expression<Func<TEntity, object>>[] includes)
+        public virtual List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, params Expression<Func<TEntity, object>>[] includes)
         {
             IQueryable<TEntity> query = dbSet;
 
