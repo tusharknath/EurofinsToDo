@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using ToDo.WebAPI.ActionFilters;
+using ToDo.WebAPI.Helper;
 
 namespace ToDo.WebAPI
 {
@@ -10,11 +12,8 @@ namespace ToDo.WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-
-            var json = config.Formatters.JsonFormatter;
-            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            config.Filters.Add(new LoggingFilterAttribute());
+            config.Filters.Add(new GlobalExceptionAttribute());
 
             // Web API routes
             config.MapHttpAttributeRoutes();

@@ -6,4 +6,3 @@ C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.Da
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.WebAPI.DataAccessLayer.csproj.CopyComplete
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.DataAccessLayer.dll
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.DataAccessLayer.pdb
-C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.WebAPI.DataAccessLayer.csprojAssemblyReference.cache

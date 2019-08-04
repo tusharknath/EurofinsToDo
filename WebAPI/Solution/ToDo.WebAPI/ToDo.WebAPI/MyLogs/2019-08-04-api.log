@@ -1,0 +1,42 @@
+2019-08-04 18:07:43.6679|INFO|ToDo.WebAPI.Helper.NLogger|JSON
+Method: GET
+URL: http://localhost:49992/api/user
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-08-04 18:07:43.6699|INFO|ToDo.WebAPI.Helper.NLogger|JSON
+Method: GET
+URL: http://localhost:49992/api/user
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-08-04 18:09:47.6427|INFO|ToDo.WebAPI.Helper.NLogger|JSON
+Method: GET
+URL: http://localhost:49992/api/user
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-08-04 18:11:06.7162|INFO|ToDo.WebAPI.Helper.NLogger|JSON
+Method: GET
+URL: http://localhost:49992/api/user
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-08-04 18:13:25.7289|INFO|ToDo.WebAPI.Helper.NLogger|JSON
+Method: GET
+URL: http://localhost:49992/api/user/test
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-08-04 18:27:27.6458|INFO|ToDo.WebAPI.Helper.NLogger|JSON
+Method: GET
+URL: http://localhost:49992/api/user
+Controller : ToDo.WebAPI.Controllers.UserController
+Action : Get
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+
