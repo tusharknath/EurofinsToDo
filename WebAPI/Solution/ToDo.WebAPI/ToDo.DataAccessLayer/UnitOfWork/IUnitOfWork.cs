@@ -7,10 +7,8 @@ using ToDo.DataAccessLayer.Repository;
 
 namespace ToDo.DataAccessLayer.UnitOfWork
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
-        IRepository<User> UserRepository { get; }
-        IRepository<Task> UserTasksRepository { get; }
-        void Save();
+        int Commit();
     }
 }

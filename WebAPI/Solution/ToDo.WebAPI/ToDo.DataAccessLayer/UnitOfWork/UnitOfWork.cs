@@ -4,53 +4,60 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ToDo.DataAccessLayer.Repository;
+using ToDo.WebAPI.Common.DataBaseModel;
 
 namespace ToDo.DataAccessLayer.UnitOfWork
 {
-    public class UnitOfWork : IUnitOfWork, System.IDisposable
+    public sealed class UnitOfWork : IUnitOfWork
     {
-        private readonly EuroFinsToDoEntities _context;
-        private IRepository<User> _userRepository;
-        private IRepository<Task> _userTasksRepository;
+        /// <summary>
+        /// The DbContext
+        /// </summary>
+        private EuroFinsToDoContext _dbContext;
 
-        public UnitOfWork(EuroFinsToDoEntities context)
+        /// <summary>
+        /// Initializes a new instance of the UnitOfWork class.
+        /// </summary>
+        /// <param name="context">The object context</param>
+        public UnitOfWork(EuroFinsToDoContext context)
         {
-            _context = context;
+
+            _dbContext = context;
         }
 
-        public IRepository<User> UserRepository
+        /// <summary>
+        /// Saves all pending changes
+        /// </summary>
+        /// <returns>The number of objects in an Added, Modified, or Deleted state</returns>
+        public int Commit()
         {
-            get { return _userRepository ?? (_userRepository = new Repository<User>(_context)); }
+            // Save changes with the default options
+            return _dbContext.SaveChanges();
         }
 
-        public IRepository<Task> UserTasksRepository
-        {
-            get { return _userTasksRepository ?? (_userTasksRepository = new Repository<Task>(_context)); }
-        }
-
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
-
-        private bool disposed = false;
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    _context.Dispose();
-                }
-            }
-            this.disposed = true;
-        }
-
+        /// <summary>
+        /// Disposes the current object
+        /// </summary>
         public void Dispose()
         {
             Dispose(true);
-            System.GC.SuppressFinalize(this);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// Disposes all external resources.
+        /// </summary>
+        /// <param name="disposing">The dispose indicator.</param>
+        private void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (_dbContext != null)
+                {
+                    _dbContext.Dispose();
+                    _dbContext = null;
+                }
+            }
         }
     }
 }
