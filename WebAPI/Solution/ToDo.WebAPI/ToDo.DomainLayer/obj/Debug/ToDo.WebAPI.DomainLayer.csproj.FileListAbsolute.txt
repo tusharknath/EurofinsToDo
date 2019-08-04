@@ -1,0 +1,6 @@
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DomainLayer\bin\Debug\ToDo.DomainLayer.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DomainLayer\bin\Debug\ToDo.DomainLayer.pdb
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DomainLayer\obj\Debug\ToDo.WebAPI.DomainLayer.csprojAssemblyReference.cache
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DomainLayer\obj\Debug\ToDo.WebAPI.DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DomainLayer\obj\Debug\ToDo.DomainLayer.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DomainLayer\obj\Debug\ToDo.DomainLayer.pdb

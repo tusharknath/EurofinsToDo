@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EuroFinsToDoModelStoreContainer" CdmEntityContainer="EuroFinsToDoEntities">
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="EuroFinsToDoModel.Task">
+        <MappingFragment StoreEntitySet="Tasks">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="Created_At" ColumnName="Created_At" />
+          <ScalarProperty Name="Updated_At" ColumnName="Updated_At" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="EuroFinsToDoModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Created_At" ColumnName="Created_At" />
+          <ScalarProperty Name="Updated_At" ColumnName="Updated_At" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
