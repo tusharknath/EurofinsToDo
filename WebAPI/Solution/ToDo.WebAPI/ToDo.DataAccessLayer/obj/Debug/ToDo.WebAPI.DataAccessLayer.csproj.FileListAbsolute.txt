@@ -1,0 +1,8 @@
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\bin\Debug\ToDo.DataAccessLayer.dll.config
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\bin\Debug\ToDo.DataAccessLayer.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\bin\Debug\ToDo.DataAccessLayer.pdb
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\bin\Debug\System.Data.SqlClient.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.WebAPI.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.WebAPI.DataAccessLayer.csproj.CopyComplete
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.DataAccessLayer.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.DataAccessLayer\obj\Debug\ToDo.DataAccessLayer.pdb

@@ -32,14 +32,16 @@ namespace ToDo.WebAPI.Authentication
 
                 if (isValid)
                 {
-                    var principal = new GenericPrincipal(new GenericIdentity(userName), null);
-                    Thread.CurrentPrincipal = principal;
-
-                    actionContext.Response =
-                       actionContext.Request.CreateResponse(HttpStatusCode.OK,
-                          "User " + userName + " successfully authenticated");
+                    // setting current principle  
+                    Thread.CurrentPrincipal = new GenericPrincipal(
+                    new GenericIdentity(userName), null);
 
                     return;
+                }
+                else
+                {
+                    actionContext.Response = actionContext.Request
+                    .CreateResponse(HttpStatusCode.Unauthorized);
                 }
             }
 

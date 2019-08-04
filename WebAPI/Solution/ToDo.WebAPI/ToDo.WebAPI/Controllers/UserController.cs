@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using ToDo.DataAccessLayer.DBModel;
 using ToDo.DomainLayer.DomainServices;
 using ToDo.WebAPI.Authentication;
+using ToDo.WebAPI.Helper;
 
 namespace ToDo.WebAPI.Controllers
 {
     [BasicAuthentication]
     public class UserController : ApiController
-    {
+    {        
+
         private IUserService _userService;
         public UserController(IUserService userService)
         {
@@ -22,6 +22,7 @@ namespace ToDo.WebAPI.Controllers
         // GET: api/UserTask
         public IEnumerable<User> Get()
         {
+            var user = Util.GetUsername();
             return _userService.GetAll();
         }
 
