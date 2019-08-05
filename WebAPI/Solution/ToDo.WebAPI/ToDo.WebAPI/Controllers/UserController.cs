@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-using ToDo.DataAccessLayer.DBModel;
-using ToDo.DomainLayer.DomainServices;
+using ToDo.DomainLayer.Services;
 using ToDo.WebAPI.Authentication;
+using ToDo.WebAPI.EF.Data.Model;
 using ToDo.WebAPI.Helper;
 
 namespace ToDo.WebAPI.Controllers
@@ -23,7 +23,7 @@ namespace ToDo.WebAPI.Controllers
         public IEnumerable<User> Get()
         {
             var user = Util.GetUsername();
-            return _userService.GetAll();
+            return _userService.Get();
         }
 
         // GET: api/UserTask/5

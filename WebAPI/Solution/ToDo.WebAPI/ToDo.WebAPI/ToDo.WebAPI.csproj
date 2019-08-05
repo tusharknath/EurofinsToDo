@@ -136,11 +136,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionFilters\GlobalExceptionAttribute.cs" />
-    <Compile Include="ActionFilters\LoggingFilterAttribute.cs" />
+    <Compile Include="ActionFilters\Filter.cs" />
     <Compile Include="App_Start\CORSConfig.cs" />
     <Compile Include="Authentication\BasicAuthenticationAttribute.cs" />
-    <Compile Include="Helper\ServiceStatus.cs" />
+    <Compile Include="Handler\LogRequestAndResponseHandler.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -149,11 +148,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helper\Error\APIDomainException.cs" />
-    <Compile Include="Helper\Error\APIDataException.cs" />
-    <Compile Include="Helper\Error\APIException.cs" />
-    <Compile Include="Helper\Error\IAPIExceptions.cs" />
-    <Compile Include="Helper\JSONHelper.cs" />
+    <Compile Include="Helper\Helpers.cs" />
     <Compile Include="Helper\NLogger.cs" />
     <Compile Include="Helper\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -171,13 +166,17 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ToDo.DataAccessLayer\ToDo.WebAPI.DataAccessLayer.csproj">
-      <Project>{773D99A0-8B29-41C9-9BD6-1D0DB47ED79B}</Project>
-      <Name>ToDo.WebAPI.DataAccessLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ToDo.DomainLayer\ToDo.WebAPI.DomainLayer.csproj">
       <Project>{9640E2D3-7E66-45B0-A99B-5D49DE221323}</Project>
       <Name>ToDo.WebAPI.DomainLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDo.WebAPI.EF.Data\ToDo.WebAPI.EF.Data.csproj">
+      <Project>{9F8F4977-0CEE-4766-9A12-FFFD5944A3AD}</Project>
+      <Name>ToDo.WebAPI.EF.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDo.WebAPI.Repository\ToDo.WebAPI.Repository.csproj">
+      <Project>{D10CFCBA-F6E7-4A52-9ECC-5896BEF1DF0C}</Project>
+      <Name>ToDo.WebAPI.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

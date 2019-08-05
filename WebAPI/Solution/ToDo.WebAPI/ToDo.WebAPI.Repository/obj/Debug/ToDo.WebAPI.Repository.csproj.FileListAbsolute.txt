@@ -1,0 +1,15 @@
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\ToDo.WebAPI.Repository.dll.config
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\ToDo.WebAPI.Repository.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\ToDo.WebAPI.Repository.pdb
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\EntityFramework.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\ToDo.WebAPI.EF.Data.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\ToDo.WebAPI.EF.Data.pdb
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\ToDo.WebAPI.EF.Data.dll.config
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\EntityFramework.xml
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Debug\ToDo.WebAPI.Repository.csprojAssemblyReference.cache
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Debug\ToDo.WebAPI.Repository.csproj.CoreCompileInputs.cache
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Debug\ToDo.WebAPI.Repository.csproj.CopyComplete
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Debug\ToDo.WebAPI.Repository.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Debug\ToDo.WebAPI.Repository.pdb

@@ -31,8 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,19 +48,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainServices\IUserService.cs" />
-    <Compile Include="DomainServices\IUserTaskService.cs" />
-    <Compile Include="DomainServices\UserService.cs" />
-    <Compile Include="DomainServices\UserTaskService.cs" />
-    <Compile Include="EntityService\EntityService.cs" />
-    <Compile Include="EntityService\IEntityService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ILoggerService.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\LoggerService.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ToDo.DataAccessLayer\ToDo.WebAPI.DataAccessLayer.csproj">
-      <Project>{773D99A0-8B29-41C9-9BD6-1D0DB47ED79B}</Project>
-      <Name>ToDo.WebAPI.DataAccessLayer</Name>
+    <ProjectReference Include="..\ToDo.WebAPI.EF.Data\ToDo.WebAPI.EF.Data.csproj">
+      <Project>{9F8F4977-0CEE-4766-9A12-FFFD5944A3AD}</Project>
+      <Name>ToDo.WebAPI.EF.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ToDo.WebAPI.Repository\ToDo.WebAPI.Repository.csproj">
+      <Project>{D10CFCBA-F6E7-4A52-9ECC-5896BEF1DF0C}</Project>
+      <Name>ToDo.WebAPI.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

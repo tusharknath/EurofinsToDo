@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EuroFinsToDoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsComplete" Type="Boolean" Nullable="false" />
+    <Property Name="Created_At" Type="DateTime" Precision="3" />
+    <Property Name="Updated_At" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Tasks__User_ID__1367E606" FromRole="Tasks" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Created_At" Type="DateTime" Precision="3" />
+    <Property Name="Updated_At" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Tasks" Relationship="Self.FK__Tasks__User_ID__1367E606" FromRole="Users" ToRole="Tasks" />
+  </EntityType>
+  <Association Name="FK__Tasks__User_ID__1367E606">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ToDoDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tasks" EntityType="Self.Task" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__Tasks__User_ID__1367E606" Association="Self.FK__Tasks__User_ID__1367E606">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+    <EntitySet Name="Logs" EntityType="EuroFinsToDoModel.Log" />
+  </EntityContainer>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int64" />
+    <Property Name="RequestIpAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RequestUri" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="RequestMethod" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RequestPostData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RequestTimestamp" Type="DateTime" Precision="3" />
+    <Property Name="ResponseStatusCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ResponseReasonPhrase" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ResponseErrorMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ResponseTimestamp" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

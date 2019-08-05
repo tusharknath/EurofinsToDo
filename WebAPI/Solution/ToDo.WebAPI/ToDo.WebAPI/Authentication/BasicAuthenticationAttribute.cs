@@ -9,15 +9,23 @@ using System.Threading;
 using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
-using ToDo.DataAccessLayer.AuthService;
+using ToDo.DomainLayer.Services;
+using ToDo.WebAPI.Repository.UnitOfWork;
 
 namespace ToDo.WebAPI.Authentication
 {
     public class BasicAuthenticationAttribute : AuthorizationFilterAttribute
     {
-        public override void OnAuthorization(HttpActionContext actionContext)
+        private readonly IUserService _userService;
+
+        public BasicAuthenticationAttribute()
         {
-            UserAuthService _userService = new UserAuthService();
+            IUnitOfWork _UoW = new UnitOfWork();
+            IUserService userServiceParam = new UserService(_UoW);
+            this._userService = userServiceParam;
+        }
+        public override void OnAuthorization(HttpActionContext actionContext)
+        {            
             var authHeader = actionContext.Request.Headers.Authorization;
 
             if (authHeader != null)
@@ -30,7 +38,7 @@ namespace ToDo.WebAPI.Authentication
 
                 var isValid = _userService.ValidateUser(userName, password);
 
-                if (isValid)
+                if (isValid != null)
                 {
                     // setting current principle  
                     Thread.CurrentPrincipal = new GenericPrincipal(

@@ -1,10 +1,9 @@
 using System;
-using System.Data.Entity;
-using ToDo.DataAccessLayer.Repository;
-using ToDo.DataAccessLayer.UnitOfWork;
-using ToDo.DomainLayer.DomainServices;
+using ToDo.DomainLayer.Services;
+using ToDo.WebAPI.Repository.UnitOfWork;
 using Unity;
 using Unity.Injection;
+using Unity.Lifetime;
 
 namespace ToDo.WebAPI
 {
@@ -43,12 +42,10 @@ namespace ToDo.WebAPI
             // NOTE: To load from web.config uncomment the line below.
             // Make sure to add a Unity.Configuration to the using statements.
             // container.LoadConfiguration();
-
+            
             // TODO: Register your type's mappings here.
-            container.RegisterType<IUserService, UserService>();
-            container.RegisterType<IUnitOfWork, UnitOfWork>();
-             container.RegisterType(typeof(IRepository<>), typeof(Repository<>));
-            //container.RegisterType<DbContext, EuroFinsToDoContext>(new InjectionConstructor("EuroFinsToDoContext"));
-        }
+            container.RegisterType<IUnitOfWork, UnitOfWork>(new HierarchicalLifetimeManager());
+            container.RegisterType<IUserService, UserService>(new HierarchicalLifetimeManager());
+            }
     }
 }

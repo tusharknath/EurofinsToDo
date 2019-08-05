@@ -1,0 +1,12 @@
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\ToDo.WebAPI.EF.Data.dll.config
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\ToDo.WebAPI.EF.Data.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\ToDo.WebAPI.EF.Data.pdb
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\EntityFramework.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\EntityFramework.xml
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\obj\Debug\ToDo.WebAPI.EF.Data.csproj.CoreCompileInputs.cache
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\obj\Debug\ToDo.WebAPI.EF.Data.csproj.CopyComplete
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\obj\Debug\ToDo.WebAPI.EF.Data.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\obj\Debug\ToDo.WebAPI.EF.Data.pdb
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.EF.Data\obj\Debug\ToDo.WebAPI.EF.Data.csprojAssemblyReference.cache
