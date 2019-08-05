@@ -139,6 +139,7 @@
     <Compile Include="ActionFilters\Filter.cs" />
     <Compile Include="App_Start\CORSConfig.cs" />
     <Compile Include="Authentication\BasicAuthenticationAttribute.cs" />
+    <Compile Include="Handler\GlobalExceptionHandler.cs" />
     <Compile Include="Handler\LogRequestAndResponseHandler.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
@@ -149,7 +150,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\Helpers.cs" />
-    <Compile Include="Helper\NLogger.cs" />
     <Compile Include="Helper\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

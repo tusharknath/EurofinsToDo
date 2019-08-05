@@ -7,6 +7,7 @@ using ToDo.WebAPI.ActionFilters;
 using ToDo.WebAPI.Authentication;
 using ToDo.WebAPI.Helper;
 using ToDo.WebAPI.Handler;
+using System.Web.Http.ExceptionHandling;
 
 namespace ToDo.WebAPI
 {
@@ -14,9 +15,7 @@ namespace ToDo.WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            //config.Filters.Add(new LoggingFilterAttribute());
-            //config.Filters.Add(new GlobalExceptionAttribute());
-
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -28,6 +27,8 @@ namespace ToDo.WebAPI
 
             config.Filters.Add(new BasicAuthenticationAttribute());
             config.MessageHandlers.Add(new LogRequestAndResponseHandler());
+            
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
         }
     }
 }

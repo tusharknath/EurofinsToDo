@@ -1,0 +1,13 @@
+2019-08-05 23:06:40.2779|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-05 23:06:41.6994|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-05 23:06:46.7113|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-05 23:06:52.1167|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Tasks": [],
+    "ID": 1,
+    "UserName": "Tushar",
+    "Password": "Tushar@123",
+    "Created_At": "2019-08-04T15:07:11.843",
+    "Updated_At": "2019-08-04T15:07:11.843"
+  }
+]

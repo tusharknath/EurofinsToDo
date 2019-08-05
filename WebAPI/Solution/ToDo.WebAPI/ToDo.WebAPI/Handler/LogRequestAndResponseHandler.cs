@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Tracing;
 using ToDo.DomainLayer.Services;
 using ToDo.WebAPI.EF.Data.Model;
 using ToDo.WebAPI.Helper;
@@ -17,6 +18,8 @@ namespace ToDo.WebAPI.Handler
     public class LogRequestAndResponseHandler : DelegatingHandler
     {
         private readonly ILoggerService _LoggerService;
+        private NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
         /// <summary>
         /// 
         /// </summary>
@@ -39,6 +42,7 @@ namespace ToDo.WebAPI.Handler
             // log request body
             string requestBody = await request.Content.ReadAsStringAsync();
             Trace.WriteLine(requestBody);
+            logger.Info(requestBody);
 
             var log = new Log
             {
@@ -56,6 +60,7 @@ namespace ToDo.WebAPI.Handler
                 // once response body is ready, log it
                 var responseBody = await result.Content.ReadAsStringAsync();
                 Trace.WriteLine(responseBody);
+                logger.Info(responseBody);
 
                 object content;
                 string errorMessage = null;

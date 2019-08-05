@@ -16,6 +16,7 @@ C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.We
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.DomainLayer.dll
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.WebAPI.EF.Data.dll
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\NLog.dll
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.WebAPI.Repository.dll
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\System.Web.Http.WebHost.dll
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -37,6 +38,7 @@ C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.We
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.DomainLayer.dll.config
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.WebAPI.EF.Data.pdb
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.WebAPI.EF.Data.dll.config
+C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\NLog.xml
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.WebAPI.Repository.pdb
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\ToDo.WebAPI.Repository.dll.config
 C:\Users\tusha\Documents\GitHub\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Tests\bin\Debug\System.Web.Http.WebHost.xml
