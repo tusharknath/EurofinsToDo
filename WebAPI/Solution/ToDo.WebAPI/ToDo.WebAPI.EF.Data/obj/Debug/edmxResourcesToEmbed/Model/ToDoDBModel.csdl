@@ -22,6 +22,8 @@
     <Property Name="Created_At" Type="DateTime" Precision="3" />
     <Property Name="Updated_At" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Tasks" Relationship="Self.FK__Tasks__User_ID__1367E606" FromRole="Users" ToRole="Tasks" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK__Tasks__User_ID__1367E606">
     <End Role="Users" Type="Self.User" Multiplicity="1" />

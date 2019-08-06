@@ -15,23 +15,24 @@ namespace ToDo.DomainLayer.Services
         {
             _UoW = UoW;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="Username"></param>
-        /// <param name="PasswordHash"></param>
-        /// <returns></returns>
-        public User ValidateUser(string Username, string PasswordHash)
+        
+        public async Task<User> Authenticate(string username, string password)
         {
-            return _UoW.Repository<User>().GetFirstOrDefault(x => x.UserName == Username && x.Password == PasswordHash);
+            var user = await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().GetFirstOrDefault(x => x.UserName == username && x.Password == password));
+
+            // return null if user not found
+            if (user == null)
+                return null;
+
+            // authentication successful so return user details without password
+            user.Password = null;
+            return user;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerable<User> Get()
+
+        public async Task<IEnumerable<User>> GetAll()
         {
-            return _UoW.Repository<User>().Get().ToList();
+            // return users without passwords
+            return await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Get());
         }
     }
 }

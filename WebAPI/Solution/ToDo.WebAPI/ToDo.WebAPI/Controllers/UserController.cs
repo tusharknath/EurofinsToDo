@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Http;
 using ToDo.DomainLayer.Services;
 using ToDo.WebAPI.Authentication;
@@ -9,7 +10,7 @@ using ToDo.WebAPI.Helper;
 
 namespace ToDo.WebAPI.Controllers
 {
-    [BasicAuthentication]
+    //[BasicAuthentication]
     public class UserController : ApiController
     {        
 
@@ -19,32 +20,18 @@ namespace ToDo.WebAPI.Controllers
             _userService = userService;
         }
 
-        // GET: api/UserTask
-        public IEnumerable<User> Get()
-        {
-            var user = Util.GetUsername();
-            return _userService.Get();
-        }
 
-        // GET: api/UserTask/5
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST: api/UserTask
-        public void Post([FromBody]string value)
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IHttpActionResult> Authenticate([FromBody]User userParam)
         {
-        }
+            var user = await _userService.Authenticate(userParam.UserName, userParam.Password);
 
-        // PUT: api/UserTask/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+            if (user == null)
+                return BadRequest();
 
-        // DELETE: api/UserTask/5
-        public void Delete(int id)
-        {
+            return Ok(user);
         }
     }
 }

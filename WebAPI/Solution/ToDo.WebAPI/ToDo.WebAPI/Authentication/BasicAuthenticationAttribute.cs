@@ -36,7 +36,7 @@ namespace ToDo.WebAPI.Authentication
                 var userName = usernamePasswordArray[0];
                 var password = usernamePasswordArray[1];
 
-                var isValid = _userService.ValidateUser(userName, password);
+                var isValid = _userService.Authenticate(userName, password);
 
                 if (isValid != null)
                 {

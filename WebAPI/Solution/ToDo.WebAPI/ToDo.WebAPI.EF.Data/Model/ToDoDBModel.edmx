@@ -37,12 +37,14 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Created_At" Type="datetime" />
           <Property Name="Updated_At" Type="datetime" />
         </EntityType>
-        <Association Name="FK__Tasks__User_ID__1367E606">
+        <Association Name="fk_b">
           <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="Tasks" Type="Self.Tasks" Multiplicity="*" />
           <ReferentialConstraint>
@@ -58,7 +60,7 @@
           <EntitySet Name="Log" EntityType="Self.Log" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tasks" EntityType="Self.Tasks" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Tasks__User_ID__1367E606" Association="Self.FK__Tasks__User_ID__1367E606">
+          <AssociationSet Name="fk_b" Association="Self.fk_b">
             <End Role="Users" EntitySet="Users" />
             <End Role="Tasks" EntitySet="Tasks" />
           </AssociationSet>
@@ -89,6 +91,8 @@
           <Property Name="Created_At" Type="DateTime" Precision="3" />
           <Property Name="Updated_At" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Tasks" Relationship="Self.FK__Tasks__User_ID__1367E606" FromRole="Users" ToRole="Tasks" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK__Tasks__User_ID__1367E606">
           <End Role="Users" Type="Self.User" Multiplicity="1" />
@@ -148,6 +152,8 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="EuroFinsToDoModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="Password" ColumnName="Password" />

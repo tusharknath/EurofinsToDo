@@ -9,7 +9,7 @@ namespace ToDo.DomainLayer.Services
 {
     public interface IUserService
     {
-        User ValidateUser(string Username, string PasswordHash);
-        IEnumerable<User> Get();
+        Task<User> Authenticate(string username, string password);
+        Task<IEnumerable<User>> GetAll();
     }
 }
