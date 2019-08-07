@@ -21,9 +21,10 @@ namespace ToDo.WebAPI.Controllers
         }
 
 
-
-        [AllowAnonymous]
+        [Route("user/authenticate")]
+        [System.Web.Mvc.AllowAnonymous]
         [HttpPost]
+        
         public async Task<IHttpActionResult> Authenticate([FromBody]User userParam)
         {
             var user = await _userService.Authenticate(userParam.UserName, userParam.Password);
@@ -33,5 +34,7 @@ namespace ToDo.WebAPI.Controllers
 
             return Ok(user);
         }
+
+       
     }
 }

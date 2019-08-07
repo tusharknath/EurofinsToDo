@@ -1,0 +1,106 @@
+2019-08-07 00:03:24.6686|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:03:26.5961|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"Tushar","password":"Tushar@123"}
+2019-08-07 00:03:36.5880|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:03:36.6349|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar","password":"Tushar@123"}
+2019-08-07 00:03:56.5230|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:03:56.5869|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar","password":"Tushar@123"}
+2019-08-07 00:06:08.3828|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:06:10.3288|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar","password":"Tushar@123"}
+2019-08-07 00:13:14.4748|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:13:18.6575|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "No HTTP resource was found that matches the request URI 'http://localhost:49992/api/user'.",
+  "MessageDetail": "No action was found on the controller 'User' that matches the request."
+}
+2019-08-07 00:13:20.0815|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:13:20.3863|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "The requested resource does not support http method 'GET'."
+}
+2019-08-07 00:20:31.0755|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:20:31.7121|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar","password":"tushar@123"}
+2019-08-07 00:22:58.5512|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:23:03.1177|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar","password":"tushar@123"}
+2019-08-07 00:25:13.3570|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 00:25:13.4951|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar","password":"tushar@123"}
+2019-08-07 08:00:47.6573|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+	"username" : "tushar",
+	"password" : "tushar@123"
+}
+2019-08-07 08:01:13.1337|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+	"username" : "tushar",
+	"password" : "tushar@123"
+}
+2019-08-07 08:03:09.4065|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+	"id" : "",
+	"firstname" : "",
+	"lastname" : "",
+	"username" : "tushar",
+	"password" : "tushar@123"
+}
+2019-08-07 08:04:35.9364|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+	"id" : "",
+	"firstname" : "",
+	"lastname" : "",
+	"username" : "tushar",
+	"password" : "tushar@123"
+}
+2019-08-07 08:07:38.8772|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:08:44.3414|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:08:59.1030|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+	"id" : "",
+	"firstname" : "",
+	"lastname" : "",
+	"username" : "tushar",
+	"password" : "tushar@123"
+}
+2019-08-07 08:09:52.0548|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:09:52.9989|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "No HTTP resource was found that matches the request URI 'http://localhost:49992/api/user'.",
+  "MessageDetail": "No action was found on the controller 'User' that matches the request."
+}
+2019-08-07 08:09:58.1642|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:10:52.9649|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:36:08.9067|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:36:12.0848|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "No HTTP resource was found that matches the request URI 'http://localhost:49992/api/user'.",
+  "MessageDetail": "No action was found on the controller 'User' that matches the request."
+}
+2019-08-07 08:36:16.6945|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:36:17.0951|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "The requested resource does not support http method 'GET'."
+}
+2019-08-07 08:36:22.3042|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:41:00.6085|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:41:01.0234|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "No HTTP resource was found that matches the request URI 'http://localhost:49992/api/user'.",
+  "MessageDetail": "No action was found on the controller 'User' that matches the request."
+}
+2019-08-07 08:41:03.2508|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:43:17.2161|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:43:17.5841|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "No HTTP resource was found that matches the request URI 'http://localhost:49992/api/user'.",
+  "MessageDetail": "No action was found on the controller 'User' that matches the request."
+}
+2019-08-07 08:43:25.4151|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:43:58.1092|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 08:45:09.8253|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:06:35.8647|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:18:31.5738|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:20:19.4097|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:23:18.2911|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:24:33.1603|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:24:34.6633|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "The requested resource does not support http method 'GET'."
+}
+2019-08-07 09:24:37.2624|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:24:53.4956|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:27:28.0642|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-07 09:27:55.9039|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Tasks": [],
+  "ID": 1,
+  "UserName": "Tushar",
+  "Password": null,
+  "Created_At": "2019-08-06T21:44:58.133",
+  "Updated_At": "2019-08-06T21:44:58.133",
+  "FirstName": "Tushar",
+  "LastName": "Nath"
+}

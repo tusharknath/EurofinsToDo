@@ -16,7 +16,7 @@ namespace ToDo.WebAPI.EF.Data.Model
     public partial class ToDoDBContext : DbContext
     {
         public ToDoDBContext()
-            : base("name=ToDoDBContext")
+            : base("name=DBContextConnection")
         {
         }
     

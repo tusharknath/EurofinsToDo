@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -9,6 +10,7 @@ using System.Threading;
 using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
+using System.Web.Mvc;
 using ToDo.DomainLayer.Services;
 using ToDo.WebAPI.Repository.UnitOfWork;
 
@@ -25,7 +27,9 @@ namespace ToDo.WebAPI.Authentication
             this._userService = userServiceParam;
         }
         public override void OnAuthorization(HttpActionContext actionContext)
-        {            
+        {
+            if (SkipAuthorization(actionContext)) return;
+
             var authHeader = actionContext.Request.Headers.Authorization;
 
             if (authHeader != null)
@@ -61,5 +65,14 @@ namespace ToDo.WebAPI.Authentication
             actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized);
             actionContext.Response.Headers.Add("WWW-Authenticate", "Basic Scheme='Data' location = 'http://localhost:");
         }
+
+        private static bool SkipAuthorization(HttpActionContext actionContext)
+        {
+            Contract.Assert(actionContext != null);
+
+            return actionContext.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any()
+                       || actionContext.ControllerContext.ControllerDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any();
+        }
+
     }
 }
