@@ -12,6 +12,8 @@ namespace ToDo.DomainLayer.Services
         Task<User> Authenticate(string username, string password);
         Task<IEnumerable<User>> GetAll();
         Task<User> Register(User user);
+
+        string ForgotPassword(User user);
         Task<int> GetUserID(string userName);
     }
 }

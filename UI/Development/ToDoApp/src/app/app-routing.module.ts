@@ -6,6 +6,7 @@ import { RegisterComponent } from './account/register/register.component';
 import { AuthGuard } from './shared/auth/auth.guard';
 import { HomeComponent } from './account/home/home.component';
 import { TodoComponent } from './todo/todo.component';
+import { ResetPasswordComponent } from './account/reset-password/reset-password.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
@@ -13,6 +14,7 @@ const routes: Routes = [
   // { path: 'todo', component: TodoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'forgotPassword', component: ResetPasswordComponent },
 
   // otherwise redirect to home
   { path: '**', redirectTo: '' }

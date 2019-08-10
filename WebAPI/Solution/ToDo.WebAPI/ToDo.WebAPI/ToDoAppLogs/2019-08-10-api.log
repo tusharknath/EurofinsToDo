@@ -4936,3 +4936,159 @@
     "IsComplete": true
   }
 ]
+2019-08-10 15:01:53.9901|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:01:54.3957|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:01:55.7327|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 25,
+    "Title": "Tushar 4444",
+    "CreatedOn": null,
+    "IsComplete": false
+  },
+  {
+    "Id": 26,
+    "Title": "ttttt",
+    "CreatedOn": null,
+    "IsComplete": false
+  },
+  {
+    "Id": 27,
+    "Title": "tyyyy",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 28,
+    "Title": "yyyyy",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-10 15:02:01.1598|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:02:01.2999|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"a","password":"a"}
+2019-08-10 15:02:01.6489|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "An error has occurred.",
+  "ExceptionMessage": "Object reference not set to an instance of an object.",
+  "ExceptionType": "System.NullReferenceException",
+  "StackTrace": "   at ToDo.WebAPI.Controllers.UserController.<Authenticate>d__3.MoveNext() in D:\\Tushar\\EurofinsToDo\\WebAPI\\Solution\\ToDo.WebAPI\\ToDo.WebAPI\\Controllers\\UserController.cs:line 32\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__15.MoveNext()"
+}
+2019-08-10 15:02:21.4720|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:02:21.6165|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"a","password":"a"}
+2019-08-10 15:02:29.0338|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "An error has occurred.",
+  "ExceptionMessage": "Object reference not set to an instance of an object.",
+  "ExceptionType": "System.NullReferenceException",
+  "StackTrace": "   at ToDo.WebAPI.Controllers.UserController.<Authenticate>d__3.MoveNext() in D:\\Tushar\\EurofinsToDo\\WebAPI\\Solution\\ToDo.WebAPI\\ToDo.WebAPI\\Controllers\\UserController.cs:line 32\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__15.MoveNext()"
+}
+2019-08-10 15:03:15.9583|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:03:16.2929|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"a","password":"a"}
+2019-08-10 15:03:19.1674|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:03:21.6320|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:03:21.7049|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"a","password":"a"}
+2019-08-10 15:03:32.2330|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:08:04.4855|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:08:04.8284|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"c","password":"x"}
+2019-08-10 15:08:09.2581|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:08:23.4309|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:08:23.5431|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"c","password":"x"}
+2019-08-10 15:08:25.3515|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:09:52.2544|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:09:52.6319|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"d","password":"v"}
+2019-08-10 15:10:02.7328|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "{ message = Invalid User Name or Password }"
+}
+2019-08-10 15:10:48.8539|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:10:49.1786|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:10:50.2553|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:11:04.0695|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:11:04.1949|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:11:04.3164|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:13:14.3542|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:13:14.4409|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:13:14.5269|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:13:31.7101|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:13:31.7754|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:13:31.8461|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:14:07.6248|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:14:07.7070|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:14:07.7884|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:17:31.8568|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:17:31.9322|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:17:32.0172|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:17:35.6843|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"g","password":"c"}
+2019-08-10 15:17:35.8189|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:28:35.6662|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:28:35.9211|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"f","password":"c"}
+2019-08-10 15:28:36.8568|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:28:41.7085|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:28:41.8078|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"f","password":"c"}
+2019-08-10 15:28:41.9118|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:30:03.9759|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:30:04.0312|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"a","password":"c"}
+2019-08-10 15:30:04.1227|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:33:57.7958|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:33:57.8756|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"b","password":"d"}
+2019-08-10 15:33:57.9777|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:42:53.8376|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:42:53.9397|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"k","password":"k"}
+2019-08-10 15:42:54.0481|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:44:03.5177|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:44:03.6416|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"k","password":"k"}
+2019-08-10 15:44:03.7408|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 15:44:50.4988|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 15:44:50.6021|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"n","password":"ww"}
+2019-08-10 15:44:50.7102|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-10 16:00:58.4827|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 16:00:58.8555|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tus"}
+2019-08-10 16:02:10.6166|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 16:02:10.7075|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"ff"}
+2019-08-10 16:04:40.4372|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 16:04:40.7936|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"aaa"}
+2019-08-10 16:04:43.6426|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name"
+}
+2019-08-10 16:04:50.2935|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 16:04:50.3627|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar"}
+2019-08-10 16:04:52.3475|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Tushar@123"
+2019-08-10 16:05:41.7482|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 16:05:41.8236|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tushar"}
+2019-08-10 16:05:44.0268|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Tushar@123"
+2019-08-10 16:06:41.4974|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-10 16:06:41.5621|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tusharknath"}
+2019-08-10 16:06:41.6502|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Tushar"

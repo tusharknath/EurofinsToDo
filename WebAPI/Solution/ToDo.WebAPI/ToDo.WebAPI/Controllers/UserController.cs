@@ -29,8 +29,8 @@ namespace ToDo.WebAPI.Controllers
         {
             var user =  await _userService.Authenticate(userParam.UserName, userParam.Password);
 
-            if (user.UserName == null)
-                return BadRequest();
+            if (user == null)
+                return BadRequest("Invalid User Name or Password");
             
             return Ok(_mapper.Map<UserGetDTO>(user));
         }
@@ -54,16 +54,34 @@ namespace ToDo.WebAPI.Controllers
             catch (AppException ex)
             {
                 // return error message if there was an exception
-                return BadRequest((new { message = ex.Message }).ToString());
+                return BadRequest("Internal Server Error");
             }
 
         }
 
-        
+        [Route("user/getUserPassword")]
+        [System.Web.Mvc.AllowAnonymous]
+        [HttpPost]
 
+        public IHttpActionResult ForgotPassword([FromBody]User userDTO)
+        {
+            try
+            {
+                // save 
+                var userPassword = _userService.ForgotPassword(userDTO);
 
+                if (userPassword == null)
+                    return BadRequest("Invalid User Name");
 
+                return Ok(userPassword);
+            }
+            catch (AppException ex)
+            {
+                // return error message if there was an exception
+                return BadRequest("Internal Server Error");
+            }
 
+        }
 
     }
 }

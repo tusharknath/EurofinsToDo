@@ -46,6 +46,19 @@ namespace ToDo.DomainLayer.Services
             return user;
         }
 
+        public string ForgotPassword(User userDTO)
+        {
+            // validation
+            if (string.IsNullOrWhiteSpace(userDTO.UserName))
+                throw new AppException("UserName is required.");
+
+            var existingUser =  _UoW.Repository<User>().GetFirstOrDefault(x => x.UserName.ToUpper() == userDTO.UserName.ToUpper());
+            if (existingUser != null)
+                return existingUser.Password;
+            else
+                return null;
+        }
+
         public async Task<IEnumerable<User>> GetAll()
         {
             // return users without passwords

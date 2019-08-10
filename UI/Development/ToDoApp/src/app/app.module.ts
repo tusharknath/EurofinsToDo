@@ -14,6 +14,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BasicAuthInterceptor } from './shared/auth/basicAuth.interceptor';
 import { HomeComponent } from './account/home/home.component';
 import { TodoComponent } from './todo/todo.component';
+import { ResetPasswordComponent } from './account/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TodoComponent } from './todo/todo.component';
     RegisterComponent,
     AlertComponent,
     HomeComponent,
-    TodoComponent
+    TodoComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
