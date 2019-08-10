@@ -48,16 +48,17 @@ namespace ToDo.WebAPI.Repository
         /// Insert entity to db
         /// </summary>
         /// <param name="entity"></param>
-        void Insert(T entity);
+        Task<T> Insert(T entity);
         /// <summary>
         /// Update entity in db
         /// </summary>
         /// <param name="entity"></param>
-        Task Update(T entity);
+        Task<T> Update(T entity);
         /// <summary>
         /// Delete entity from db by primary key
         /// </summary>
         /// <param name="id"></param>
-        Task Delete(T entity);
+        Task Delete(int id);
+
     }
 }

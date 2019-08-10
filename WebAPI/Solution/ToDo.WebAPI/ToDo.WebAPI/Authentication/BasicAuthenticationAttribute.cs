@@ -44,9 +44,12 @@ namespace ToDo.WebAPI.Authentication
 
                 if (isValid != null)
                 {
-                    // setting current principle  
-                    Thread.CurrentPrincipal = new GenericPrincipal(
-                    new GenericIdentity(userName), null);
+                    //// setting current principle  
+                    //Thread.CurrentPrincipal = new GenericPrincipal(
+                    //new GenericIdentity(userName), null);
+
+                    var identity = new GenericIdentity(userName);
+                    SetPrincipal(new GenericPrincipal(identity, null));
 
                     return;
                 }
@@ -58,6 +61,15 @@ namespace ToDo.WebAPI.Authentication
             }
 
             HandleUnathorized(actionContext);
+        }
+
+        private static void SetPrincipal(IPrincipal principal)
+        {
+            Thread.CurrentPrincipal = principal;
+            if (HttpContext.Current != null)
+            {
+                HttpContext.Current.User = principal;
+            }
         }
 
         private static void HandleUnathorized(HttpActionContext actionContext)

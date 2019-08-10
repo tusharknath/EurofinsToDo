@@ -8,6 +8,7 @@ using ToDo.WebAPI.Authentication;
 using ToDo.WebAPI.Helper;
 using ToDo.WebAPI.Handler;
 using System.Web.Http.ExceptionHandling;
+using System.Web.Http.Cors;
 
 namespace ToDo.WebAPI
 {
@@ -15,7 +16,11 @@ namespace ToDo.WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -28,7 +33,7 @@ namespace ToDo.WebAPI
             config.Filters.Add(new BasicAuthenticationAttribute());
             config.MessageHandlers.Add(new LogRequestAndResponseHandler());
             
-            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
+            //config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
         }
     }
 }

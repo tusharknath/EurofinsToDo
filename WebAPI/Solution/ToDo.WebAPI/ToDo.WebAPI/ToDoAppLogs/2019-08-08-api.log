@@ -1,0 +1,18 @@
+2019-08-08 22:29:01.3062|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-08 22:29:01.9260|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"Tushar","password":"Tushar@123"}
+2019-08-08 23:38:45.1490|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-08 23:38:45.3467|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"Tushar","lastName":"Nath","username":"TusharKNath","password":"Tushar@123"}
+2019-08-08 23:40:49.5776|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-08 23:40:49.7621|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"Tushar","lastName":"Nath","username":"Tushar","password":"Tushar@123"}
+2019-08-08 23:41:07.2884|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "ID": 1,
+  "UserName": "Tushar",
+  "Password": null,
+  "Created_At": null,
+  "Updated_At": null,
+  "FirstName": "Tushar",
+  "LastName": "Nath",
+  "Tasks": []
+}
+2019-08-08 23:57:18.5144|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-08 23:57:18.6899|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"Tushar","lastName":"Nath","username":"TusharKNath","password":"Tushar@123"}

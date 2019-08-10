@@ -25,8 +25,8 @@ namespace ToDo.WebAPI.EF.Data.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Task> Tasks { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Log> Logs { get; set; }
+        public virtual DbSet<UserTask> UserTasks { get; set; }
     }
 }

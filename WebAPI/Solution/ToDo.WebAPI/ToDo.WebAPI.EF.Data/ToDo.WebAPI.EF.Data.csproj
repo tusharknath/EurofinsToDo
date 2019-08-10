@@ -53,9 +53,6 @@
     <Compile Include="Model\Log.cs">
       <DependentUpon>ToDoDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Task.cs">
-      <DependentUpon>ToDoDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Model\ToDoDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -72,6 +69,9 @@
       <DependentUpon>ToDoDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Model\User.cs">
+      <DependentUpon>ToDoDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserTask.cs">
       <DependentUpon>ToDoDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

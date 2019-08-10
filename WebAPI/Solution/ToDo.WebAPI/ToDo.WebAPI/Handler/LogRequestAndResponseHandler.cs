@@ -81,7 +81,7 @@ namespace ToDo.WebAPI.Handler
                     log.ResponseReasonPhrase = result.ReasonPhrase;
                     log.ResponseErrorMessage = errorMessage;
                     log.ResponseTimestamp = DateTime.Now;
-                    _LoggerService.Insert(log);
+                    //_LoggerService.Insert(log);
                 }
             }
             return result;

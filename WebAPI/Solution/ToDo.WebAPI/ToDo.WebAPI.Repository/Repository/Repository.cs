@@ -6,6 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using ToDo.WebAPI.EF.Data.Model;
+using Task = System.Threading.Tasks.Task;
 
 namespace ToDo.WebAPI.Repository
 {
@@ -87,7 +88,7 @@ namespace ToDo.WebAPI.Repository
         /// 
         /// </summary>
         /// <param name="entity"></param>
-        public virtual void Insert(T entity)
+        public virtual async Task<T> Insert(T entity)
         {
             try
             {
@@ -96,6 +97,9 @@ namespace ToDo.WebAPI.Repository
                     throw new ArgumentNullException("entity");
                 }
                 dbSet.Add(entity);
+                await context.SaveChangesAsync();
+                return entity;
+
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -118,29 +122,53 @@ namespace ToDo.WebAPI.Repository
         /// 
         /// </summary>
         /// <param name="entity"></param>
-        public virtual async System.Threading.Tasks.Task Update(T entity)
+        public virtual async Task<T> Update(T entity)
         {
-            //dbSet.Attach(entity);
-            //_dbContext.Entry(entity).State = EntityState.Modified;
-            dbSet.Attach(entity);
-            await context.SaveChangesAsync();
+            try
+            {
+                if (entity == null)
+                {
+                    throw new ArgumentNullException("entity");
+                }
+                dbSet.Attach(entity);
+                context.Entry(entity).State = EntityState.Modified;
+                await context.SaveChangesAsync();
+                return entity;
+
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                var msg = string.Empty;
+
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        msg += string.Format("Property: {0} Error: {1}",
+                        validationError.PropertyName, validationError.ErrorMessage) + Environment.NewLine;
+                    }
+                }
+
+                var fail = new Exception(msg, dbEx);
+                throw fail;
+            }
+
+           
         }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
-        public virtual async System.Threading.Tasks.Task Delete(T entity)
+        public virtual async Task Delete(int id)
         {
-            //T entityToDelete = dbSet.Find(id);
-            //if (_dbContext.Entry(entityToDelete).State == EntityState.Detached)
-            //{
-            //    dbSet.Attach(entityToDelete);
-            //}
-            //dbSet.Remove(entityToDelete);
-            dbSet.Attach(entity);
-            dbSet.Remove(entity);
+            T entityToDelete = dbSet.Find(id);
+            dbSet.Attach(entityToDelete);
+            dbSet.Remove(entityToDelete);
+            //dbSet.Attach(entity);
+            //dbSet.Remove(entity);
             await context.SaveChangesAsync();
         }
+
 
         /// <summary>
         /// IDisposable implementation

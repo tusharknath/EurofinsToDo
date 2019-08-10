@@ -1,5 +1,8 @@
+using AutoMapper;
 using System;
 using ToDo.DomainLayer.Services;
+using ToDo.WebAPI.DTOs;
+using ToDo.WebAPI.EF.Data.Model;
 using ToDo.WebAPI.Repository.UnitOfWork;
 using Unity;
 using Unity.Injection;
@@ -42,10 +45,24 @@ namespace ToDo.WebAPI
             // NOTE: To load from web.config uncomment the line below.
             // Make sure to add a Unity.Configuration to the using statements.
             // container.LoadConfiguration();
-            
+
             // TODO: Register your type's mappings here.
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                //Create all maps here
+                cfg.CreateMap<UserTask, UserTaskGetDTO>();
+                cfg.CreateMap<User, UserGetDTO>();
+
+                //...
+            });
+
+            IMapper mapper = config.CreateMapper();
+            container.RegisterInstance(mapper);
+
             container.RegisterType<IUnitOfWork, UnitOfWork>(new HierarchicalLifetimeManager());
             container.RegisterType<IUserService, UserService>(new HierarchicalLifetimeManager());
-            }
+            container.RegisterType<IUserTaskService, UserTaskService>(new HierarchicalLifetimeManager());
+        }
     }
 }

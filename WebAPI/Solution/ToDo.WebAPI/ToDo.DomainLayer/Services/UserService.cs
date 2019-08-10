@@ -24,8 +24,25 @@ namespace ToDo.DomainLayer.Services
             if (user == null)
                 return null;
 
-            // authentication successful so return user details without password
-            user.Password = null;
+            return user;
+        }
+
+        public async Task<User> Register(User userDTO)
+        {
+            // validation
+            if (string.IsNullOrWhiteSpace(userDTO.Password))
+                throw new AppException("Password is required.");
+
+            var existingUser = _UoW.Repository<User>().GetFirstOrDefault(x => x.UserName.ToUpper() == userDTO.UserName.ToUpper());
+            if(existingUser != null)
+                throw new AppException("Username \"" + userDTO.UserName + "\" is already taken.");
+
+            var user = await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Insert(userDTO));
+
+            // return null if user not found
+            if (user == null)
+                throw new AppException("Invalid UserName or Password.");
+
             return user;
         }
 
@@ -33,6 +50,11 @@ namespace ToDo.DomainLayer.Services
         {
             // return users without passwords
             return await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Get());
+        }
+
+        public async Task<int> GetUserID(string userName)
+        {
+            return await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Get().Where(x => x.UserName.ToUpper() == userName.ToUpper()).Select(x => x.ID).SingleOrDefault());
         }
     }
 }

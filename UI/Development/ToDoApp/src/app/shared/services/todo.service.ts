@@ -1,29 +1,27 @@
-// import { Injectable } from '@angular/core';
-// import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { environment } from './../../../environments/environment';
+import { Task } from '../models/todo';
 
-// @Injectable()
-// export class TodoService {
-//   toDoList: AngularFireList<any>;
-//   constructor(private firebasedb: AngularFireDatabase) { }
+@Injectable({ providedIn: 'root' })
+export class TasksService {
 
-//   getToDoList() {
-//     this.toDoList = this.firebasedb.list('titles');
-//     return this.toDoList;
-//   }
+  constructor(
+    private http: HttpClient) { }
 
-//   addTitle(title: string) {
-//     this.toDoList.push({
-//       title: title,
-//       isChecked: false
-//     });
-//   }
+  getAll() {
+    return this.http.get<Task[]>(`${environment.apiUrl}/api/usertask`);
+  }
 
-//   checkOrUnCheckTitle($key: string, flag: boolean) {
-//     this.toDoList.update($key, { isChecked: flag });
-//   }
+  create(content) {
+    return this.http.post(`${environment.apiUrl}/api/usertask`, { Title: content });
+  }
 
-//   removeTitle($key: string) {
-//     this.toDoList.remove($key);
-//   }
+  remove(taskId) {
+    return this.http.delete(`${environment.apiUrl}/api/usertask/${taskId}`);
+  }
 
-// }
+  update(taskId: number, change: boolean) {
+    return this.http.put(`${environment.apiUrl}/api/usertask/${taskId}`, { IsComplete: change });
+  }
+}

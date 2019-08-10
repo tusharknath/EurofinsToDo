@@ -5,10 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="78727537c9604756bad1f2606ea6e92b" Name="Diagram1">
-        <EntityTypeShape EntityType="EuroFinsToDoModel.Task" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="EuroFinsToDoModel.User" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="EuroFinsToDoModel.FK__Tasks__User_ID__1367E606" ManuallyRouted="false" />
         <EntityTypeShape EntityType="EuroFinsToDoModel.Log" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="EuroFinsToDoModel.UserTask" Width="1.5" PointX="3" PointY="4.25" />
+        <AssociationConnector Association="EuroFinsToDoModel.fk_b" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -12,7 +12,7 @@ namespace ToDo.WebAPI.EF.Data.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Task
+    public partial class UserTask
     {
         public int ID { get; set; }
         public int User_ID { get; set; }

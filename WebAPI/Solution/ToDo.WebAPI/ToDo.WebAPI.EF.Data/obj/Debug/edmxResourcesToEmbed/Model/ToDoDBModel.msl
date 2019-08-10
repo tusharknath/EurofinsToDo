@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="EuroFinsToDoModelStoreContainer" CdmEntityContainer="ToDoDBContext">
-    <EntitySetMapping Name="Tasks">
-      <EntityTypeMapping TypeName="EuroFinsToDoModel.Task">
-        <MappingFragment StoreEntitySet="Tasks">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
-          <ScalarProperty Name="Created_At" ColumnName="Created_At" />
-          <ScalarProperty Name="Updated_At" ColumnName="Updated_At" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="EuroFinsToDoModel.User">
         <MappingFragment StoreEntitySet="Users">
@@ -40,6 +28,18 @@
           <ScalarProperty Name="RequestIpAddress" ColumnName="RequestIpAddress" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTasks">
+      <EntityTypeMapping TypeName="EuroFinsToDoModel.UserTask">
+        <MappingFragment StoreEntitySet="UserTasks">
+          <ScalarProperty Name="Updated_At" ColumnName="Updated_At" />
+          <ScalarProperty Name="Created_At" ColumnName="Created_At" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

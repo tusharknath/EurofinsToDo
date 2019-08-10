@@ -17,7 +17,7 @@ namespace ToDo.WebAPI.EF.Data.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
-            this.Tasks = new HashSet<Task>();
+            this.UserTasks = new HashSet<UserTask>();
         }
     
         public int ID { get; set; }
@@ -29,6 +29,6 @@ namespace ToDo.WebAPI.EF.Data.Model
         public string LastName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Task> Tasks { get; set; }
+        public virtual ICollection<UserTask> UserTasks { get; set; }
     }
 }

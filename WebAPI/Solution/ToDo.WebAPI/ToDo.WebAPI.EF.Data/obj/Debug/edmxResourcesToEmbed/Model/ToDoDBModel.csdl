@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="EuroFinsToDoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Task">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="User_ID" Type="Int32" Nullable="false" />
-    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IsComplete" Type="Boolean" Nullable="false" />
-    <Property Name="Created_At" Type="DateTime" Precision="3" />
-    <Property Name="Updated_At" Type="DateTime" Precision="3" />
-    <NavigationProperty Name="User" Relationship="Self.FK__Tasks__User_ID__1367E606" FromRole="Tasks" ToRole="Users" />
-  </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="ID" />
@@ -21,30 +9,18 @@
     <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Created_At" Type="DateTime" Precision="3" />
     <Property Name="Updated_At" Type="DateTime" Precision="3" />
-    <NavigationProperty Name="Tasks" Relationship="Self.FK__Tasks__User_ID__1367E606" FromRole="Users" ToRole="Tasks" />
     <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserTasks" Relationship="EuroFinsToDoModel.fk_b" FromRole="User" ToRole="UserTask" />
   </EntityType>
-  <Association Name="FK__Tasks__User_ID__1367E606">
-    <End Role="Users" Type="Self.User" Multiplicity="1" />
-    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Users">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Tasks">
-        <PropertyRef Name="User_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="ToDoDBContext" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Tasks" EntityType="Self.Task" />
     <EntitySet Name="Users" EntityType="Self.User" />
-    <AssociationSet Name="FK__Tasks__User_ID__1367E606" Association="Self.FK__Tasks__User_ID__1367E606">
-      <End Role="Users" EntitySet="Users" />
-      <End Role="Tasks" EntitySet="Tasks" />
-    </AssociationSet>
     <EntitySet Name="Logs" EntityType="EuroFinsToDoModel.Log" />
+    <EntitySet Name="UserTasks" EntityType="EuroFinsToDoModel.UserTask" />
+    <AssociationSet Name="fk_b" Association="EuroFinsToDoModel.fk_b">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserTask" EntitySet="UserTasks" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Log">
     <Key>
@@ -62,4 +38,28 @@
     <Property Name="ResponseErrorMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="ResponseTimestamp" Type="DateTime" Precision="3" />
   </EntityType>
+  <EntityType Name="UserTask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsComplete" Type="Boolean" Nullable="false" />
+    <Property Name="Created_At" Type="DateTime" Precision="3" />
+    <Property Name="Updated_At" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="User" Relationship="EuroFinsToDoModel.fk_b" FromRole="UserTask" ToRole="User" />
+  </EntityType>
+  <Association Name="fk_b">
+    <End Type="EuroFinsToDoModel.User" Role="User" Multiplicity="1" />
+    <End Type="EuroFinsToDoModel.UserTask" Role="UserTask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserTask">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

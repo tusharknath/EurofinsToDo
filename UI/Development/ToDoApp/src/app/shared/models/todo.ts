@@ -1,9 +1,6 @@
-export class Todo {
-    id: number;
-    title: string = '';
-    complete: boolean = false;
-  
-    constructor(values: Object = {}) {
-      Object.assign(this, values);
-    }
-  }
+export class Task {
+  Id: number;
+  Title: string;
+  IsComplete: boolean;
+  CreatedOn: string;
+}
