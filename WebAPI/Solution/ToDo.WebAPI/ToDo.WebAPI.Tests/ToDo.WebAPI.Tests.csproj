@@ -74,6 +74,9 @@
     <Compile Include="Controllers\UserControllerTests.cs" />
     <Compile Include="Controllers\UserTaskControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\LoggerServiceTests.cs" />
+    <Compile Include="Services\UserServiceTests.cs" />
+    <Compile Include="Services\UserTaskServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -158,6 +158,7 @@ D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\Microsoft.Cod
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\Microsoft.Web.Infrastructure.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\Newtonsoft.Json.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\NLog.dll
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\Swashbuckle.Core.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\System.Net.Http.Formatting.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\System.Threading.Tasks.Extensions.dll
@@ -214,4 +215,3 @@ D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.We
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.WebAPI.csproj.CopyComplete
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.WebAPI.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.WebAPI.pdb
-D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\Swashbuckle.Core.dll

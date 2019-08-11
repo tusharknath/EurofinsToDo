@@ -7,16 +7,18 @@ using System.Text;
 using System.Threading.Tasks;
 using ToDo.DomainLayer.Services.Interface;
 using AutoMapper;
+using Moq;
+using ToDo.WebAPI.DTOs;
+using ToDo.WebAPI.EF.Data.Model;
+using ToDo.WebAPI.Repository;
+using ToDo.WebAPI.Repository.UnitOfWork;
+using ToDo.DomainLayer.Services;
 
 namespace ToDo.WebAPI.Controllers.Tests
 {
     [TestClass()]
     public class UserControllerTests
     {
-        private UserController _userController;
-        private IUserService _userService;
-        private IMapper _mapper;
-        private string _userId;
 
 
         [TestMethod()]
