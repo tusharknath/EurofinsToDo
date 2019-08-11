@@ -159,8 +159,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helper\Helpers.cs" />
-    <Compile Include="Helper\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +185,10 @@
     <ProjectReference Include="..\ToDo.WebAPI.Repository\ToDo.WebAPI.Repository.csproj">
       <Project>{D10CFCBA-F6E7-4A52-9ECC-5896BEF1DF0C}</Project>
       <Name>ToDo.WebAPI.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDo.WebAPI.Util\ToDo.WebAPI.Util.csproj">
+      <Project>{2DEB10FC-F79D-4018-B7FA-AE0FF107FD36}</Project>
+      <Name>ToDo.WebAPI.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

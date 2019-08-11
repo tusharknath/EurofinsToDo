@@ -1,13 +1,6 @@
-﻿using Newtonsoft.Json.Serialization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
-using ToDo.WebAPI.ActionFilters;
+﻿using System.Web.Http;
 using ToDo.WebAPI.Authentication;
-using ToDo.WebAPI.Helper;
 using ToDo.WebAPI.Handler;
-using System.Web.Http.ExceptionHandling;
 using System.Web.Http.Cors;
 
 namespace ToDo.WebAPI

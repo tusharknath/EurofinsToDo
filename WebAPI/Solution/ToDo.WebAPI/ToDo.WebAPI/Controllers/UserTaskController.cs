@@ -7,10 +7,10 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using ToDo.DomainLayer.Services;
+using ToDo.DomainLayer.Services.Interface;
 using ToDo.WebAPI.Authentication;
 using ToDo.WebAPI.DTOs;
 using ToDo.WebAPI.EF.Data.Model;
-using ToDo.WebAPI.Helper;
 
 namespace ToDo.WebAPI.Controllers
 {

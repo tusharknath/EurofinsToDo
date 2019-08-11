@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using ToDo.DomainLayer;
 using ToDo.DomainLayer.Services;
+using ToDo.DomainLayer.Services.Interface;
 using ToDo.WebAPI.DTOs;
 using ToDo.WebAPI.EF.Data.Model;
 
@@ -78,7 +79,7 @@ namespace ToDo.WebAPI.Controllers
             catch (AppException ex)
             {
                 // return error message if there was an exception
-                return BadRequest("Internal Server Error");
+                return BadRequest("Please COntact admin");
             }
 
         }

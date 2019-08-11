@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using ToDo.DomainLayer.Services.Interface;
 using ToDo.WebAPI.EF.Data.Model;
 using ToDo.WebAPI.Repository.UnitOfWork;
 
@@ -17,8 +14,7 @@ namespace ToDo.DomainLayer.Services
         }
         public void Insert(Log log)
         {
-            _UoW.Repository<Log>().Insert(log);
-            _UoW.SaveChanges();
+            Task.Run(() => _UoW.Repository<Log>().Insert(log));
         }
     }
 }

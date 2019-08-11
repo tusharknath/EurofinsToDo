@@ -472,3 +472,53 @@
   "CreatedOn": null,
   "IsComplete": true
 }
+2019-08-11 12:58:48.7146|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 12:58:48.8034|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"Tushar","password":"Tushar@123"}
+2019-08-11 12:58:49.1484|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-11 13:00:09.9976|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:10.0235|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"Tushar","lastName":"nath","username":"tanju","password":"Tushar@123"}
+2019-08-11 13:00:13.3894|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "ID": 1004,
+  "UserName": "tanju",
+  "Password": "bmXft6A8P9xX5t/98y+dtz923rZr0D2l9U9KFn6HjMk=",
+  "Created_At": null,
+  "Updated_At": null,
+  "FirstName": "Tushar",
+  "LastName": "nath",
+  "UserTasks": []
+}
+2019-08-11 13:00:32.0461|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:32.0720|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tanju","password":"Tushar@123"}
+2019-08-11 13:00:32.1209|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "id": 1004,
+  "username": "tanju",
+  "password": "bmXft6A8P9xX5t/98y+dtz923rZr0D2l9U9KFn6HjMk=",
+  "firstName": "Tushar",
+  "lastName": "nath"
+}
+2019-08-11 13:00:35.5334|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:35.5593|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:35.6226|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[]
+2019-08-11 13:00:40.9394|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:40.9674|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"Tushar"}
+2019-08-11 13:00:41.0323|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 38,
+  "Title": "Tushar",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 13:00:42.9317|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:42.9473|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 13:00:43.0316|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 38,
+  "Title": "Tushar",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 13:00:45.1724|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:00:45.1880|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:01:37.7662|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 13:01:37.7817|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tanju"}
+2019-08-11 13:01:37.8783|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Tushar@123"
