@@ -214,3 +214,4 @@ D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.We
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.WebAPI.csproj.CopyComplete
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.WebAPI.dll
 D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\obj\Debug\ToDo.WebAPI.pdb
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI\bin\Swashbuckle.Core.dll

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EuroFinsToDoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="RequestIpAddress" Type="varchar" MaxLength="50" />
+    <Property Name="RequestUri" Type="varchar" MaxLength="500" />
+    <Property Name="RequestMethod" Type="varchar" MaxLength="10" />
+    <Property Name="RequestPostData" Type="nvarchar(max)" />
+    <Property Name="RequestTimestamp" Type="datetime" />
+    <Property Name="ResponseStatusCode" Type="varchar" MaxLength="10" />
+    <Property Name="ResponseReasonPhrase" Type="nvarchar(max)" />
+    <Property Name="ResponseErrorMessage" Type="nvarchar(max)" />
+    <Property Name="ResponseTimestamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Created_At" Type="datetime" />
+    <Property Name="Updated_At" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserTasks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_ID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsComplete" Type="bit" Nullable="false" />
+    <Property Name="Created_At" Type="datetime" />
+    <Property Name="Updated_At" Type="datetime" />
+  </EntityType>
+  <Association Name="fk_b">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserTasks" Type="Self.UserTasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserTasks">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EuroFinsToDoModelStoreContainer">
+    <EntitySet Name="Log" EntityType="Self.Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserTasks" EntityType="Self.UserTasks" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_b" Association="Self.fk_b">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserTasks" EntitySet="UserTasks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,25 +1,3 @@
-<!-- 
-<div class="input-group">
-  <input type="text" class="form-control" #itemTitle>
-  <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
-    <i class="fa fa-plus-circle fa-2x"></i>
-  </div>
-</div>
-
-<div style="margin:5px 0px">
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let item of tasks">
-      <span class="hover-cursor" [class.text-success]="item.IsComplete" (click)="alterCheck(item.Id,item.IsComplete)">
-        <i class="fa fa-lg" [ngClass]="item.IsComplete?'fa-check-circle-o':'fa-circle-thin'"></i>
-      </span>
-      {{item.Title}}
-      <span class="hover-cursor text-danger pull-right" (click)="onDelete(item.Id)">
-        <i class="fa fa-trash-o fa-lg"></i>
-      </span>
-    </li>
-  </ul>
-</div> -->
-
 <div id="myDIV" class="header">
   <h2>My To Do List</h2>
   <input type="text" id="myInput" placeholder="Title..." #itemTitle>
@@ -31,7 +9,9 @@
     <span class="hover-cursor" [class.text-success]="item.IsComplete" (click)="alterCheck(item.Id,item.IsComplete)">
       <i class="fa fa-lg" [ngClass]="item.IsComplete?'fa-check-circle-o':'fa-circle-thin'"></i>
     </span>
-    <span (click)="alterCheck(item.Id,item.IsComplete)" [ngClass]="{'textchecked' : item.IsComplete}">{{item.Title}}</span>
+    <span (click)="alterCheck(item.Id,item.IsComplete)" [ngClass]="{'textchecked' : item.IsComplete}">
+      {{item.Title}}
+    </span>
     <span class="hover-cursor text-danger pull-right" (click)="onDelete(item.Id)">
       <i class="fa fa-trash-o fa-lg"></i>
     </span>

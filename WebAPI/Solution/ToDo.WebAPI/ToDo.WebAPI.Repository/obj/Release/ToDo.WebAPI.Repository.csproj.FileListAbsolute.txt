@@ -1,0 +1,15 @@
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\ToDo.WebAPI.Repository.dll.config
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\ToDo.WebAPI.Repository.dll
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\ToDo.WebAPI.Repository.pdb
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\EntityFramework.dll
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\EntityFramework.SqlServer.dll
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\ToDo.WebAPI.EF.Data.dll
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\ToDo.WebAPI.EF.Data.pdb
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\ToDo.WebAPI.EF.Data.dll.config
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\EntityFramework.xml
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\bin\Release\EntityFramework.SqlServer.xml
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Release\ToDo.WebAPI.Repository.csprojAssemblyReference.cache
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Release\ToDo.WebAPI.Repository.csproj.CoreCompileInputs.cache
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Release\ToDo.WebAPI.Repository.csproj.CopyComplete
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Release\ToDo.WebAPI.Repository.dll
+D:\Tushar\EurofinsToDo\WebAPI\Solution\ToDo.WebAPI\ToDo.WebAPI.Repository\obj\Release\ToDo.WebAPI.Repository.pdb

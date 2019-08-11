@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using Swashbuckle.Application;
 using System.Linq;
 using System.Web.Http;
 
@@ -16,7 +17,8 @@ namespace ToDo.WebAPI
             var appXmlType = formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
             formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            
+
+           
         }
     }
 }
