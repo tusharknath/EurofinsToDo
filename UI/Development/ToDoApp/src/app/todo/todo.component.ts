@@ -7,7 +7,8 @@ import { User } from '../shared/models/user';
 import { Subscription } from 'rxjs';
 
 @Component({
-  templateUrl: './todo.component.html'
+  templateUrl: './todo.component.html',
+  styleUrls: ['./todo.component.css']
 })
 
 export class TodoComponent implements OnInit, OnDestroy {

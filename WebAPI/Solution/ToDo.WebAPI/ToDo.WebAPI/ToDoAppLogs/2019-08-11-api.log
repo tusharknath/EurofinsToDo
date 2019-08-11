@@ -1,0 +1,474 @@
+2019-08-11 11:11:03.0364|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:11:03.1693|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"Test","lastName":"Test","username":"Test","password":"Test@123"}
+2019-08-11 11:12:13.7457|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:12:14.1281|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test","password":"test@123"}
+2019-08-11 11:13:20.6049|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:13:20.7174|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test","password":"test@123"}
+2019-08-11 11:15:24.5568|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:15:24.8591|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test","password":"etst123"}
+2019-08-11 11:15:27.9713|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Internal Server Error"
+}
+2019-08-11 11:15:34.9790|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:15:35.0476|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test","password":"etst123"}
+2019-08-11 11:17:01.9726|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:17:02.2847|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test","password":"etst123"}
+2019-08-11 11:17:06.3244|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "ToDo.DomainLayer.AppException: Username \"test\" is already taken.\r\n   at ToDo.DomainLayer.Services.UserService.<Register>d__3.MoveNext() in D:\\Tushar\\EurofinsToDo\\WebAPI\\Solution\\ToDo.WebAPI\\ToDo.DomainLayer\\Services\\UserService.cs:line 38\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at ToDo.WebAPI.Controllers.UserController.<Register>d__4.MoveNext() in D:\\Tushar\\EurofinsToDo\\WebAPI\\Solution\\ToDo.WebAPI\\ToDo.WebAPI\\Controllers\\UserController.cs:line 47"
+}
+2019-08-11 11:18:02.5831|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:18:02.8726|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test","password":"tst123"}
+2019-08-11 11:18:07.7698|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Username \"test\" is already taken."
+}
+2019-08-11 11:18:15.3304|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:18:15.3967|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"firstName":"test","lastName":"test","username":"test11","password":"tst123"}
+2019-08-11 11:18:18.0003|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "ID": 1003,
+  "UserName": "test11",
+  "Password": "tst123",
+  "Created_At": null,
+  "Updated_At": null,
+  "FirstName": "test",
+  "LastName": "test",
+  "UserTasks": []
+}
+2019-08-11 11:18:28.8804|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:18:28.9505|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"Test","password":"Test123"}
+2019-08-11 11:18:29.0605|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name or Password"
+}
+2019-08-11 11:18:47.8092|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:18:47.8983|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"test"}
+2019-08-11 11:18:48.0098|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Test@123"
+2019-08-11 11:19:55.4644|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:19:55.5257|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"test","password":"Test@123"}
+2019-08-11 11:19:55.6648|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "id": 1002,
+  "username": "Test",
+  "password": "Test@123",
+  "firstName": "Test",
+  "lastName": "Test"
+}
+2019-08-11 11:19:57.1452|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:19:57.2257|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:19:57.3851|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[]
+2019-08-11 11:20:02.4019|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:20:02.4726|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"tushar"}
+2019-08-11 11:20:02.5968|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 31,
+  "Title": "tushar",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:20:05.6468|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:20:05.7116|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:20:05.8871|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 31,
+  "Title": "tushar",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:20:08.0162|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:20:08.0853|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:20:12.1982|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:20:12.3173|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"test333"}
+2019-08-11 11:20:12.4272|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 32,
+  "Title": "test333",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:20:16.7942|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"test"}
+2019-08-11 11:20:16.8665|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 33,
+  "Title": "test",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:27:07.8759|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:27:07.9569|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:27:08.1151|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": false
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": false
+  }
+]
+2019-08-11 11:28:17.6042|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:17.6683|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:17.7284|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": false
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": false
+  }
+]
+2019-08-11 11:28:25.6520|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:25.7241|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:28:25.8072|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 32,
+  "Title": "test333",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:28:26.9130|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:26.9705|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:28:27.0545|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 33,
+  "Title": "test",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:28:28.0950|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":false}
+2019-08-11 11:28:28.1729|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 32,
+  "Title": "test333",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:28:28.8472|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":false}
+2019-08-11 11:28:28.9112|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 33,
+  "Title": "test",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:28:50.4872|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:50.6769|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:50.7887|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": false
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": false
+  }
+]
+2019-08-11 11:28:56.4798|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:56.5300|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:28:56.6175|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 33,
+  "Title": "test",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:28:57.9178|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:28:57.9708|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:28:58.0349|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 32,
+  "Title": "test333",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:28:58.8241|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":false}
+2019-08-11 11:28:58.8887|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 32,
+  "Title": "test333",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:28:59.6779|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":false}
+2019-08-11 11:28:59.7428|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 33,
+  "Title": "test",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:33:36.9580|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:33:37.0185|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:33:37.1216|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 32,
+  "Title": "test333",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:35:13.6099|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:35:13.7554|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:35:13.8724|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": false
+  }
+]
+2019-08-11 11:35:28.8641|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:35:28.9800|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:35:29.1133|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 33,
+  "Title": "test",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:35:47.4805|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:35:47.6188|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:35:47.7393|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:37:23.3958|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:37:23.5159|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:37:23.6291|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:37:29.3287|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:37:29.4381|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:37:29.5499|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:38:35.2000|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:38:35.3229|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:38:35.4384|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:38:39.4719|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:38:39.5589|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"Test"}
+2019-08-11 11:38:39.6763|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 34,
+  "Title": "Test",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:38:43.5470|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:38:43.6273|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:38:43.7271|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 34,
+  "Title": "Test",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:40:44.1896|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:40:44.3399|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:40:44.4703|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 34,
+    "Title": "Test",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:40:48.6228|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:40:48.7191|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"tushat"}
+2019-08-11 11:40:48.8295|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 35,
+  "Title": "tushat",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:40:50.4406|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:40:50.4987|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:40:50.5768|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 35,
+  "Title": "tushat",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:42:27.7974|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:42:27.9458|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:42:28.0708|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 34,
+    "Title": "Test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 35,
+    "Title": "tushat",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:47:01.7867|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:01.9556|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:02.0923|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 34,
+    "Title": "Test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 35,
+    "Title": "tushat",
+    "CreatedOn": null,
+    "IsComplete": true
+  }
+]
+2019-08-11 11:47:11.5835|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:11.6538|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"Tushar3333"}
+2019-08-11 11:47:11.7562|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 36,
+  "Title": "Tushar3333",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:47:13.3617|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:13.4272|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:47:13.5018|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 36,
+  "Title": "Tushar3333",
+  "CreatedOn": null,
+  "IsComplete": true
+}
+2019-08-11 11:47:26.8813|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:26.9444|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"Title":"Tushar"}
+2019-08-11 11:47:27.0217|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 37,
+  "Title": "Tushar",
+  "CreatedOn": null,
+  "IsComplete": false
+}
+2019-08-11 11:47:44.8507|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:45.0136|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:45.1439|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|[
+  {
+    "Id": 32,
+    "Title": "test333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 33,
+    "Title": "test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 34,
+    "Title": "Test",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 35,
+    "Title": "tushat",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 36,
+    "Title": "Tushar3333",
+    "CreatedOn": null,
+    "IsComplete": true
+  },
+  {
+    "Id": 37,
+    "Title": "Tushar",
+    "CreatedOn": null,
+    "IsComplete": false
+  }
+]
+2019-08-11 11:47:55.3422|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-11 11:47:55.4387|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"IsComplete":true}
+2019-08-11 11:47:55.5793|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Id": 37,
+  "Title": "Tushar",
+  "CreatedOn": null,
+  "IsComplete": true
+}

@@ -39,12 +39,12 @@ namespace ToDo.WebAPI.Controllers
         [System.Web.Mvc.AllowAnonymous]
         [HttpPost]
 
-        public IHttpActionResult Register([FromBody]User userDTO)
+        public async Task<IHttpActionResult> Register([FromBody]User userDTO)
         {
             try
             {
                 // save 
-                var user =  _userService.Register(userDTO);
+                var user = await _userService.Register(userDTO);
 
                 if (user == null)
                     return BadRequest();
@@ -54,7 +54,7 @@ namespace ToDo.WebAPI.Controllers
             catch (AppException ex)
             {
                 // return error message if there was an exception
-                return BadRequest("Internal Server Error");
+                return BadRequest(ex.Message.ToString());
             }
 
         }
