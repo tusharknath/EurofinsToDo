@@ -2,6 +2,7 @@
 using ToDo.WebAPI.Authentication;
 using ToDo.WebAPI.Handler;
 using System.Web.Http.Cors;
+using System.Web.Http.ExceptionHandling;
 
 namespace ToDo.WebAPI
 {
@@ -26,7 +27,7 @@ namespace ToDo.WebAPI
             config.Filters.Add(new BasicAuthenticationAttribute());
             config.MessageHandlers.Add(new LogRequestAndResponseHandler());
             
-            //config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
         }
     }
 }
