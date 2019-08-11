@@ -1,7 +1,0 @@
-2019-08-04 19:07:14.3601|INFO|ToDo.WebAPI.Helper.NLogger|JSON
-Method: GET
-URL: http://localhost:49992/api/user/1
-Controller : ToDo.WebAPI.Controllers.UserController
-Action : Get
-Action Parameters : {"messageFormat":"JSON","messageArguments":[{"id":1}]}
-
