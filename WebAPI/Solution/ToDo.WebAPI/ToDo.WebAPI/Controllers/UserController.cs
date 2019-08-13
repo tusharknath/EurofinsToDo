@@ -79,7 +79,7 @@ namespace ToDo.WebAPI.Controllers
             catch (AppException ex)
             {
                 // return error message if there was an exception
-                return BadRequest("Please COntact admin");
+                return BadRequest("Please Contact admin");
             }
 
         }

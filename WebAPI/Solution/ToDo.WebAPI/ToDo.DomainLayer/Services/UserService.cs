@@ -21,7 +21,7 @@ namespace ToDo.DomainLayer.Services
         public async Task<User> Authenticate(string username, string password)
         {
             var encryptedPassword = Helpers.Encrypt(password);
-            var user = await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().GetFirstOrDefault(x => x.UserName == username && x.Password == encryptedPassword));
+            var user = await Task.Run(() => _UoW.Repository<User>().GetFirstOrDefault(x => x.UserName == username && x.Password == encryptedPassword));
 
             // return null if user not found
             if (user == null)
@@ -42,7 +42,7 @@ namespace ToDo.DomainLayer.Services
 
             userDTO.Password = Helpers.Encrypt(userDTO.Password);
 
-            var user = await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Insert(userDTO));
+            var user = await Task.Run(() => _UoW.Repository<User>().Insert(userDTO));
 
             // return null if user not found
             if (user == null)
@@ -63,15 +63,10 @@ namespace ToDo.DomainLayer.Services
             else
                 return null;
         }
-
-        public async Task<IEnumerable<User>> GetAll()
-        {
-            return await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Get());
-        }
-
+        
         public async Task<int> GetUserID(string userName)
         {
-            return await System.Threading.Tasks.Task.Run(() => _UoW.Repository<User>().Get().Where(x => x.UserName.ToUpper() == userName.ToUpper()).Select(x => x.ID).SingleOrDefault());
+            return await Task.Run(() => _UoW.Repository<User>().Get().Where(x => x.UserName.ToUpper() == userName.ToUpper()).Select(x => x.ID).SingleOrDefault());
         }
     }
 }

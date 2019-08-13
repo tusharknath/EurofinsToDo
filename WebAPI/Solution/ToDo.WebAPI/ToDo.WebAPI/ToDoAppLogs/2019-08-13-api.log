@@ -1,0 +1,11 @@
+2019-08-13 11:23:23.6371|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-13 11:23:23.7349|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tanju"}
+2019-08-13 11:23:24.1847|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Tushar@123"
+2019-08-13 11:23:37.4195|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-13 11:23:37.4624|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"hhhh"}
+2019-08-13 11:23:37.4983|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{
+  "Message": "Invalid User Name"
+}
+2019-08-13 11:57:17.3190|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|
+2019-08-13 11:57:17.4068|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|{"username":"tanju"}
+2019-08-13 11:57:17.9683|INFO|ToDo.WebAPI.Handler.LogRequestAndResponseHandler|"Tushar@123"
